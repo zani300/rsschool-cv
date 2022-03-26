@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Economica&display=swap');
+:root {
+  --red: #ae2323;
+  --black: #000000;
+  --gray: #292929;
+  --white: white
+}
+
+body {
+  font-family: 'Economica', sans-serif;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 20px auto;
+  width: 1024px;
+  font-family: 'Economica', sans-serif;
+  font-size: 22px;
+  line-height: 1.5;
+  background-color: #000000;
+  box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.23);
+}
+
+
+.two-columns {
+  display: flex;
+}
+
+.left-column {
+  width: 42%;
+  color: var(--red);
+  background-color: var(--gray);
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  background-color: #000000;
+}
+
+header img {
+  margin-bottom: 10px;
+  border: 10px solid var(--pink-color);
+  border-radius: 50%;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+header h2 {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+main {
+  padding: 0 10px;
+}
+
+main h3 {
+  width: 136px;
+  margin: 40px auto 20px;
+  padding: 5px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background-color: var(--red);
+}
+
+main .contacts h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  transform: translate(0, -50%);
+}
+
+main li {
+  margin-bottom: 10px;
+}
+
+.contacts li img {
+  vertical-align: middle;
+  margin-right: 25px;
+}
+
+.contacts li p {
+  display: inline;
+  vertical-align: middle;
+  margin-left: -25px;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: var(--red);
+}
+
+main :not(.contacts) ul {
+  list-style-type: disc;
+  margin-left: 50px;
+}
+
+.language-name {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.right-column .sub-header {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.right-column .about-myself .sub-header {
+  margin-top: 0;
+}
+
+.about-myself p {
+  margin-bottom: 10px;
+  margin-left: 45px;
+}
+
+.about-myself p:last-of-type {
+  margin-bottom: 0;
+}
+
+.right-column h3 {
+  flex: 1;
+  vertical-align: middle;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--white);
+  border-bottom: 2px solid var(--red);
+}
+
+.right-column img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.right-column p {
+  color: var(--white);
+}
+
+.education p {
+  margin-left: 45px;
+}
+
+.education p strong {
+  font-weight: 700;
+}
+
+.courses ul {
+  list-style-type: disc;
+  margin-left: 45px;
+  margin-bottom: 30px;
+}
+
+.courses li {
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.right-column img.score-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.code-example p {
+  margin-left: 45px;
+}
+
+pre {
+  margin-left: 45px;
+  margin-top: 20px;
+  padding-left: 30px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #3f3f3f;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: var(--dark-gray-color);
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer .github-icon {
+  margin-right: 10px;
+}
+
+.my-github {
+  display: flex;
+  align-items: center;
+}
+
+.otstyp {
+  margin-left: 25px;
+}

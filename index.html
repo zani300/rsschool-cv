@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rsschool-cv-html</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+     background: #1b1b1b ;
+     color: rgb(41, 41, 41); /* Цвет текста */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="two-columns">
+      <div class="left-column">
+        <header>
+          <img src="images/450p.png" alt="Portrait" width="204" height="204">
+          <h1>Andrei Hlushchanka</h1>
+          <h2>Junior Frontend Developer</h2>
+        </header>
+        <main>
+          <section class="contacts">
+            <h3>Contacts</h3>
+            <ul>
+              <li>
+                <img src="./icons/phone.svg" alt="Phone Icon" width="30" height="30">
+                <p>&nbsp;&nbsp;+48 57-*3-99-**9</p>
+              </li>
+              <li>
+                <img src="./icons/email.svg" alt="Email Icon" width="30" height="30">
+                <p>&nbsp;&nbsp;hlushchanka@gmail.com</p>
+              </li>
+              <li>
+                <img src="./icons/telegram.svg" alt="Telegram Icon" width="30" height="30">
+                <p>&nbsp;&nbsp;@zani300</p>
+              </li>
+            </ul>
+          </section>
+          <section class="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML5, CSS3</li>
+              <li>Adobe Photoshop</li>
+              <li>Git, GitHub</li>
+              <li>VS Code</li>
+              <li>FL Studio 20</li>
+              <li>Linux cmd</li>
+            </ul>
+          </section>
+          <section class="languages">
+            <h3>Languages</h3>
+            <ul>
+              <li>
+                <p class="language-name">English</p>
+                <p>Intermidiate/Upper Intermidiate</p>
+              </li>
+              <li>
+                <p class="language-name">Russian</p>
+                <p>Native</p>
+              </li>
+              <li>
+                <p class="language-name">Polish</p>
+                <p>Intermidiate/Upper Intermidiate</p>
+              </li>
+              <li>
+                <p class="language-name">Ukrainian</p>
+                <p>Intermediate</p>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+      <aside class="right-column">
+        <section class="about-myself">
+          <div class="sub-header">
+            <div id="otstyp"></div>
+            <h3 class="otstyp">About Myself</h3>
+          </div>
+          <p>Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew</p>
+          <p>Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew
+            Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew</p>
+          <p>Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew
+            Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew
+          </p>
+          <p>Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew
+            Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew
+            Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew Text about Andrew
+          </p>
+        </section>
+        <section class="education">
+          <div class="sub-header">
+            <h3 class="otstyp">Education</h3>
+          </div>
+          <p><strong>Akademia Górniczo-Hutnicza im. Stanisława Staszica</strong></p>
+          <p>Applied computing</p>
+          <p>Years: 2021-2022</p>
+        </section>
+        <section class="courses">
+          <div class="sub-header">
+            <h3 class="otstyp">Courses</h3>
+          </div>
+          <ul>
+            <li>HTML and CSS Tutorials on ru.code.basics</li>
+            <li>JavaScript Manual on learnjavascript.ru(in progress...)</li>
+            <li>RS Schools «JavaScript/Front-end. Stage 0»</li>
+          </ul>
+        </section>
+        <section class="code-example">
+          <div class="sub-header">
+            <h3 class="otstyp">Code example</h3>
+          </div>
+          <p><strong>Peak array index KATA from CODEWARS:</strong> Given an array of ints, return the index such that
+            the sum of the elements to the right of that index equals the sum of the elements to the
+            left of that index. If there is no such index, return -1. If there is more than one such index, return the
+            left-most index.</p>
+          <pre>
+            <code>
+function peak(arr) {
+
+  for (let i = 1; i &lt; arr.length - 1; i++) {
+    let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) =>
+    accumulator + currentValue);
+    let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) =>
+    accumulator + currentValue);
+
+    if (leftSum === rightSum) return i;
+  }
+  return -1;
+}</code>
+          </pre>
+  </div>
+</section>
+</aside>
+</div>
+<footer>
+<a class="my-github" href="https://github.com/zani300">
+  <img class="github-icon" src="./icons/github.svg" alt="Github Icon" width="26" height="26">
+  <p>Visit my GitHub</p>
+</a>
+<p>© 2021</p>
+<a href="https://rs.school/js/">
+  <img src="./icons/rsschool.svg" alt="Rsschool Icon" width="73" height="26">
+</a>
+</footer>
+</div>
+</body>
+</html>
